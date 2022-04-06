@@ -28,7 +28,11 @@ body{
   font-family: 'Josefin Sans',"Arial", sans-serif;
   background-color: #fff;
   color: var(--main-light-font-color);
+}
 
+*:focus{
+  outline: 2px dashed var(--main-light-font-color);
+  outline-offset: 3px;
 }
 
 img{
@@ -158,7 +162,7 @@ a{
   padding-left: 570px;
   background-image: url("../img/vr-glasses.jpg");
   background-repeat: no-repeat;
-  background-size: 731px, 500px;
+  background-size: contain;
 }
 
 .banner-content {
@@ -177,6 +181,104 @@ a{
   line-height: 1;
 }
 
+/* CREATIONS */
+
+.creations {
+  margin-bottom: 154px;
+}
+
+
+.creations-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.creations-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--main-dark-font-color);
+}
+.creations-link {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--main-dark-font-color);
+  border: 1px solid var(--main-dark-font-color);
+  display: inline-block;
+  padding: 13px 40px;
+}
+.creations-list {
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+
+}
+.creations-item {
+  width: 256px;
+  height: 450px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  padding: 0;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  background-image: url("../img/earth.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.creations-name{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 354px;
+  padding-left: 40px;
+  padding-right: 47px;
+}
+
+.creations-item:nth-child(2){
+  background-image: url("../img/arcade.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:nth-child(3){
+  background-image: url("../img/footbal_player.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:nth-child(4){
+  background-image: url("../img/grid.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:nth-child(5){
+  background-image: url("../img/road.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:nth-child(6){
+  background-image: url("../img/borealis.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:nth-child(7){
+  background-image: url("../img/curiosity.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.creations-item:last-child{
+  background-image: url("../img/fisheye.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
 
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
@@ -192,5 +294,29 @@ only screen and (                min-resolution: 2dppx) {
   }
   .banners-inner {
     background-image: url("../img/vr-glasses@2x.jpg");
+  }
+  .creations-item {
+    background-image: url("../img/earth@2x.jpg");
+  }
+  .creations-item:nth-child(2){
+    background-image: url("../img/arcade@2x.jpg");
+  }
+  .creations-item:nth-child(3){
+    background-image: url("../img/footbal_player@2x.jpg");
+  }
+  .creations-item:nth-child(4){
+    background-image: url("../img/grid@2x.jpg");
+  }
+  .creations-item:nth-child(5){
+    background-image: url("../img/road@2x.jpg");
+  }
+  .creations-item:nth-child(6){
+    background-image: url("../img/borealis@2x.jpg");
+  }
+  .creations-item:nth-child(7){
+    background-image: url("../img/curiosity@2x.jpg");
+  }
+  .creations-item:last-child{
+    background-image: url("../img/fisheye@2x.jpg");
   }
 }
