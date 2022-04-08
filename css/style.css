@@ -190,7 +190,9 @@ a{
   font-weight: 300;
   line-height: 1;
 }
-
+.banner-text{
+  margin: 0;
+}
 /* CREATIONS */
 
 .creations {
