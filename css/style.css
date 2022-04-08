@@ -154,12 +154,12 @@ a{
 .hero-heading {
   padding: 40px;
   margin: 0;
-  font-size: 70px;
-  line-height: 1;
+  font-size: 72px;
+  line-height: 70px;
   font-weight: 300;
 }
 
-/* HERO */
+/* BANNERS */
 
 .banners {
   margin-top: 160px;
